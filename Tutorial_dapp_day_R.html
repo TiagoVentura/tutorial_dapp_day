@@ -1672,7 +1672,7 @@ library(igraph)
 library(broom)
 library(here)
 here()</code></pre>
-<pre><code>[1] &quot;/home/venturat/Dropbox/SICSS_Rio/materials/materials/tutorial_Dapp_twitter&quot;</code></pre>
+<pre><code>[1] &quot;/home/venturat/Dropbox/SICSS_Rio/materials/materials/tutorial_dapp_sicss/tutorial_dapp_day&quot;</code></pre>
 <pre class="r"><code>print(&quot;HElo&quot;)</code></pre>
 <pre><code>[1] &quot;HElo&quot;</code></pre>
 <div id="solicitando-sua-credenciais." class="section level2">
@@ -1771,16 +1771,16 @@ net &lt;- add.vertices(net,
 net &lt;- add.edges(net, t(data))
 
 summary(net)</code></pre>
-<pre><code>IGRAPH ed01377 DN-- 11403 13361 -- 
+<pre><code>IGRAPH 12cf751 DN-- 11403 13361 -- 
 + attr: name (v/c)</code></pre>
 <pre class="r"><code># Ou
 g &lt;- graph_from_data_frame(d=data, vertices=unique(c(data)))
 
 summary(g)</code></pre>
-<pre><code>IGRAPH 1baa726 DN-- 11403 13361 -- 
+<pre><code>IGRAPH ae2e7c7 DN-- 11403 13361 -- 
 + attr: name (v/c)</code></pre>
 <pre class="r"><code>summary(net)</code></pre>
-<pre><code>IGRAPH ed01377 DN-- 11403 13361 -- 
+<pre><code>IGRAPH 12cf751 DN-- 11403 13361 -- 
 + attr: name (v/c)</code></pre>
 </div>
 <div id="passo-3-adicione-as-variáveis" class="section level3">
@@ -1800,7 +1800,7 @@ E(net)$hash &lt;- dados_covid_rt$hashtags </code></pre>
 V(net)$outdegree&lt;-degree(net, mode=&quot;out&quot;)
 V(net)$indegree&lt;-degree(net, mode=&quot;in&quot;)
 summary(net)</code></pre>
-<pre><code>IGRAPH ed01377 DN-- 11403 13361 -- 
+<pre><code>IGRAPH 12cf751 DN-- 11403 13361 -- 
 + attr: name (v/c), outdegree (v/n), indegree (v/n), text (e/c),
 | nameauth (e/c), namehub (e/c), web (e/x), hash (e/x)</code></pre>
 <div id="layout" class="section level3">
@@ -2022,7 +2022,7 @@ ggplot(hashtags_por_comunidade, aes(x=reorder(hashtags,
 <div id="contando-o-número-de-menções-por-nó." class="section level4">
 <h4>Contando o número de menções por nó.</h4>
 <pre class="r"><code>summary(net)</code></pre>
-<pre><code>IGRAPH ed01377 DN-- 11403 13361 -- 
+<pre><code>IGRAPH 12cf751 DN-- 11403 13361 -- 
 + attr: name (v/c), outdegree (v/n), indegree (v/n), l1 (v/n), l2
 | (v/n), membership (v/n), new.color (v/c), text (e/c), nameauth (e/c),
 | namehub (e/c), web (e/x), hash (e/x)</code></pre>
