@@ -19,12 +19,6 @@ here()
 
     [1] "/home/venturat/Dropbox/SICSS_Rio/materials/materials/tutorial_dapp_sicss/tutorial_dapp_day"
 
-``` r
-print("HElo")
-```
-
-    [1] "HElo"
-
 Solicitando sua credenciais.
 ----------------------------
 

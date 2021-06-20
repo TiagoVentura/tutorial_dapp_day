@@ -31,7 +31,6 @@ library(igraph)
 library(broom)
 library(here)
 here()
-print("HElo")
 ```
 
 ## Solicitando sua credenciais. 
